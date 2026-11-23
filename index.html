@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRANC DE ARC — ТОКИО</title>
+<meta name="description" content="FRANC DE ARC: the ТОКИО Hoodie in royal blue, black and cream, and the Compass Beanie in sky blue.">
+<meta name="theme-color" content="#1D31B4">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/store.js" defer></script>
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-compass" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="29.5" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M54.22 37.95A23 23 0 0 1 37.95 54.22M26.05 54.22A23 23 0 0 1 9.78 37.95M9.78 26.05A23 23 0 0 1 26.05 9.78M37.95 9.78A23 23 0 0 1 54.22 26.05"/>
+    <path fill="currentColor" opacity=".45" d="M32 32L42.61 21.39L32 28ZM32 32L42.61 42.61L36 32ZM32 32L21.39 42.61L32 36ZM32 32L21.39 21.39L28 32ZM32 32L32 4.5L28.46 28.46ZM32 32L59.5 32L35.54 28.46ZM32 32L32 59.5L35.54 35.54ZM32 32L4.5 32L28.46 35.54Z"/>
+    <path fill="currentColor" d="M32 32L42.61 21.39L36 32ZM32 32L42.61 42.61L32 36ZM32 32L21.39 42.61L28 32ZM32 32L21.39 21.39L32 28ZM32 32L32 4.5L35.54 28.46ZM32 32L59.5 32L35.54 35.54ZM32 32L32 59.5L28.46 35.54ZM32 32L4.5 32L28.46 28.46Z"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 64 64">
+    <path fill="currentColor" opacity=".45" d="M32 32L42.61 21.39L32 28ZM32 32L42.61 42.61L36 32ZM32 32L21.39 42.61L32 36ZM32 32L21.39 21.39L28 32ZM32 32L32 4.5L28.46 28.46ZM32 32L59.5 32L35.54 28.46ZM32 32L32 59.5L35.54 35.54ZM32 32L4.5 32L28.46 35.54Z"/>
+    <path fill="currentColor" d="M32 32L42.61 21.39L36 32ZM32 32L42.61 42.61L32 36ZM32 32L21.39 42.61L28 32ZM32 32L21.39 21.39L32 28ZM32 32L32 4.5L35.54 28.46ZM32 32L59.5 32L35.54 35.54ZM32 32L32 59.5L28.46 35.54ZM32 32L4.5 32L28.46 28.46Z"/>
+  </symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12H18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M6 12H18M12 6V18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6L5 12L11 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="marquee on-dark" aria-hidden="true">
+  <div class="marquee__track" data-marquee></div>
+</div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#top" aria-label="FRANC DE ARC, back to the top">
+      <svg aria-hidden="true"><use href="#i-compass"></use></svg>
+      <span class="brand__name">FRANC DE ARC</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a class="nav__extra" href="#details">Details</a>
+      <a class="nav__extra" href="#contact">Contact</a>
+      <button class="bag-toggle" type="button" aria-expanded="false" aria-controls="bag" data-bag-toggle>
+        <span>Bag</span>
+        <span data-bag-count>0</span>
+        <span class="visually-hidden">items</span>
+      </button>
+    </nav>
+
+    <div class="bag" id="bag" role="region" aria-labelledby="bag-title" hidden>
+      <div class="bag__head">
+        <h2 class="bag__title" id="bag-title">Your bag</h2>
+        <button class="icon-btn" type="button" aria-label="Close bag" data-bag-close>
+          <svg aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+      <div class="bag__empty" data-bag-empty>
+        <p>Your bag is empty.</p>
+        <a class="btn btn--accent btn--sm" href="#shop" data-bag-shop>Shop the collection</a>
+      </div>
+      <div data-bag-filled hidden>
+        <ul class="bag__lines" data-bag-lines></ul>
+        <div class="bag__foot">
+          <div class="bag__subtotal">
+            <span>Subtotal</span>
+            <span data-bag-subtotal>[SUBTOTAL]</span>
+          </div>
+          <button class="btn btn--accent btn--block" type="button" data-checkout>Checkout</button>
+          <p class="bag__note" role="status" data-checkout-note hidden>Checkout isn't connected yet: [ADD YOUR CHECKOUT LINK]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <div data-home-view>
+
+    <section class="hero on-dark" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <div class="hero__mark">
+            <h1 class="hero__title" id="hero-title">
+              <span>FRANC</span>
+              <span>DE ARC</span>
+            </h1>
+            <span class="hero__city">ТОКИО</span>
+          </div>
+          <div class="hero__offer">
+            <p>Royal blue, black and cream hoodies, and a sky-blue beanie with a compass on the cuff.</p>
+            <a class="btn btn--light" href="#shop">Shop the collection</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="images/hero-closeup.jpg" width="1125" height="2000" alt="Royal blue FRANC DE ARC hoodie with the sky-blue Compass Beanie" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ground" id="shop" aria-labelledby="shop-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <div class="section__titles">
+            <span class="label">000° — Collection</span>
+            <h2 class="section__title" id="shop-title">The collection</h2>
+          </div>
+          <span class="section__aside">Hoodies in three colours. One beanie.</span>
+        </div>
+        <div class="grid" data-grid>
+          <noscript><p>Turn on JavaScript to browse the collection.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="details" aria-labelledby="details-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <div class="section__titles">
+            <span class="label">090° — Details</span>
+            <h2 class="section__title" id="details-title">Follow the compass.</h2>
+          </div>
+          <p class="section__lede">The compass mark sits below the hood on the back of the black hoodie, and on the cuff of the beanie.</p>
+        </div>
+        <div class="figures">
+          <figure class="figure">
+            <img src="images/hoodie-black-back-detail.jpg" width="550" height="550" loading="lazy" alt="Compass mark below the hood on the back of the black ТОКИО Hoodie" style="object-position:50% 30%">
+            <figcaption><span>Back — ТОКИО Hoodie, Black</span><span>02</span></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/beanie-sky.jpg" width="640" height="800" loading="lazy" alt="Compass mark on the cuff of the sky-blue Compass Beanie" style="object-position:30% 62%">
+            <figcaption><span>Cuff — Compass Beanie, Sky Blue</span><span>04</span></figcaption>
+          </figure>
+        </div>
+        <div>
+          <a class="btn btn--accent" href="#shop">Shop the collection</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="product" aria-labelledby="product-title" data-product-view hidden>
+    <div class="container product__inner">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="#shop"><svg aria-hidden="true"><use href="#i-back"></use></svg><span>Shop</span></a>
+        <span aria-hidden="true">/</span>
+        <span data-p-crumb></span>
+      </nav>
+      <div class="product__layout">
+        <div class="gallery">
+          <div class="gallery__main">
+            <img src="images/hoodie-blue-front.jpg" width="1240" height="1240" alt="" data-p-main>
+          </div>
+          <div class="gallery__thumbs" data-p-thumbs></div>
+        </div>
+        <div class="product__info">
+          <div class="product__head">
+            <span class="label" data-p-kicker></span>
+            <h1 class="product__title" id="product-title" data-p-name></h1>
+            <span class="product__price" data-p-price></span>
+          </div>
+          <fieldset class="opts">
+            <legend class="label">Colour — <span data-p-colour></span></legend>
+            <div class="swatches" data-p-swatches></div>
+          </fieldset>
+          <fieldset class="opts">
+            <legend class="label">Size</legend>
+            <div class="sizes" data-p-sizes></div>
+          </fieldset>
+          <div class="product__actions">
+            <button class="btn btn--accent btn--block" type="button" data-p-add data-keeps-bag>Add to bag</button>
+            <p class="status" role="status" data-p-status></p>
+          </div>
+          <div class="product__details">
+            <span class="label">Details</span>
+            <ul data-p-details></ul>
+            <p>Fabric and care: [ADD FABRIC + CARE]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer on-dark" id="contact" aria-labelledby="contact-title">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div class="site-footer__lead">
+        <span class="label">180° — Contact</span>
+        <h2 class="site-footer__title" id="contact-title">Questions about sizing or an order? Get in touch.</h2>
+      </div>
+      <dl class="contacts">
+        <div>
+          <dt class="label">Email</dt>
+          <dd>[YOUR EMAIL]</dd>
+        </div>
+        <div>
+          <dt class="label">Instagram</dt>
+          <dd>[@YOUR HANDLE]</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="wordmark" aria-hidden="true">FRANC DE ARC</div>
+    <div class="site-footer__base">
+      <span>© <span data-year>2026</span> FRANC DE ARC</span>
+      <span><svg aria-hidden="true"><use href="#i-compass"></use></svg>ТОКИО</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

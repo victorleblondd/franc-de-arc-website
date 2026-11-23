@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="32" fill="#1D31B4"/>
+  <g transform="translate(32 32) scale(0.8) translate(-32 -32)" fill="#FFFFFF" stroke="#FFFFFF">
+    <circle cx="32" cy="32" r="29.5" fill="none" stroke-width="3"/>
+    <path fill="none" stroke-width="2.4" stroke-linecap="round" d="M54.22 37.95A23 23 0 0 1 37.95 54.22M26.05 54.22A23 23 0 0 1 9.78 37.95M9.78 26.05A23 23 0 0 1 26.05 9.78M37.95 9.78A23 23 0 0 1 54.22 26.05"/>
+    <path stroke="none" opacity=".45" d="M32 32L42.61 21.39L32 28ZM32 32L42.61 42.61L36 32ZM32 32L21.39 42.61L32 36ZM32 32L21.39 21.39L28 32ZM32 32L32 4.5L28.46 28.46ZM32 32L59.5 32L35.54 28.46ZM32 32L32 59.5L35.54 35.54ZM32 32L4.5 32L28.46 35.54Z"/>
+    <path stroke="none" d="M32 32L42.61 21.39L36 32ZM32 32L42.61 42.61L32 36ZM32 32L21.39 42.61L28 32ZM32 32L21.39 21.39L32 28ZM32 32L32 4.5L35.54 28.46ZM32 32L59.5 32L35.54 35.54ZM32 32L32 59.5L28.46 35.54ZM32 32L4.5 32L28.46 28.46Z"/>
+  </g>
+</svg>
